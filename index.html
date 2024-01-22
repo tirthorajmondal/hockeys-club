@@ -1,16 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey's Club</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-       <!-- tailwind & daisy cdn -->
+    <!-- tailwind & daisy cdn -->
 
-       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-       <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary- black: '#131318'
+              }
+            }
+        }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <section class="container mx-auto ">
+            <div class=" p-8 mx-4 lg:mx-auto my-8 text-center border-2 border-dashed border-y-gray-200 border-x-0">
+                <h3 class=" font-extrabold text-3xl mb-6">Get In Touch</h3>
+                <p class="lg:w-3/5 mx-auto font-medium text-stone-400 text-center">
+                    Please feel free to contact us. Our contact details are given below. adipiscing aliquam turpis
+                    placerat dolor. Purus urna in sit nullam proin.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mx-4">
+                <!-- info-div -->
+                <div class="grid-cols-1 border-2 border-slate-300 rounded-lg">
+                    <div class="py-4 px-2 lg:py-10 px-4 lg:px-10 grid grid-cols-1 gap-6">
+                        <div class="bg-orange-100 p-8 rounded-lg">
+                            <img class="w-12" src="./images/tel.png" alt="">
+                            <P class="font-extrabold text-stone-400 mt-6 mb-1">Phone Number :</P>
+                            <P class="font-extrabold">(+62) 123-321-543</P>
+                        </div>
+                        <div class="bg-orange-100 p-8 rounded-lg">
+                            <img class="w-12" src="./images/mail.png" alt="">
+                            <P class="font-extrabold text-stone-400 mt-6 mb-1">Email</P>
+                            <P class="font-extrabold">hockeys@support.com</P>
+                        </div>
+                        <div class="bg-orange-100 p-8 rounded-lg">
+                            <img class="w-12" src="./images/map.png" alt="">
+                            <P class="font-extrabold text-stone-400 mt-6 mb-1">Location</P>
+                            <P class="font-extrabold">152/1 Mohakhali Wireless Gate</P>
+                        </div>
+                    </div>
+                </div>
+                <!-- contact form -->
+                <div class="lg:col-span-2">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 ">
+                        <div class="mb-4">
+                            <label for="" class="text-xl font-bold">Your Name</label>
+                            <input type="text" placeholder="Enter your full name" required
+                                class="mt-2 input input-bordered w-full " />
+                        </div>
+                        <div class="mb-4 ">
+                            <label for="" class="text-xl font-bold">Your Email</label>
+                            <input type="text" placeholder="Enter your email" required
+                                class="mt-2 input input-bordered w-full " />
+                        </div>
+                        <div class="mb-4 ">
+                            <label for="" class="text-xl font-bold">Subject</label>
+                            <input type="text" placeholder="Enter your subject" required
+                                class="mt-2 input input-bordered w-full " />
+                        </div>
+                        <div class="mb-4 ">
+                            <label for="" class="text-xl font-bold">Phone Number</label>
+                            <input type="text" placeholder="Enter your Phone number"
+                                class="mt-2 input input-bordered w-full " />
+                        </div>
+                        <div class="lg:col-span-2 mb-4 ">
+                            <label for="" class="text-xl font-bold">Message</label>
+                            <textarea class="mt-2 textarea textarea-bordered w-full" placeholder="Write your message"
+                                rows="11"></textarea>
+                        </div>
+                        <button
+                            class="lg:col-span-2 btn bg-red-500 text-white text-xl font-bold text-center w-full">Send
+                            Message</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
