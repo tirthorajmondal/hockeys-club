@@ -52,11 +52,16 @@
             color: rgb(149, 149, 149);
             font-weight: 500;
         }
-        h1 , h2 , h3 , h4{
+
+        h1,
+        h2,
+        h3,
+        h4 {
             color: #131318;
         }
-        p{
-            color:rgba(168, 162, 158)
+
+        p {
+            color: rgba(168, 162, 158)
         }
     </style>
 
@@ -64,8 +69,49 @@
 
 <body>
     <header>
-        <nav>
-
+        <!-- navbar -->
+        <nav class="container">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="font-bold text-[#424247a2]">Home</a></li>
+                            <li><a class="font-bold text-[#424247a2]">Pages</a></li>
+                            <li><a class="font-bold text-[#424247a2]">About</a></li>
+                            <li><a class="font-bold text-[#424247a2]">Blog</a></li>
+                            <li><a class="font-bold text-[#424247a2]">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-bold text-[#FF4240]">Home</a></li>
+                        <li><a class="font-bold text-[#424247a2]">Pages</a></li>
+                        <li><a class="font-bold text-[#424247a2]">About</a></li>
+                        <li><a class="font-bold text-[#424247a2]">Blog</a></li>
+                        <li><a class="font-bold text-[#424247a2]">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle mr-3 hidden lg:flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="#424247a2">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <a class="btn bg-[#FF4240] text-white font-bold text-xl border-0">Get Ticket</a>
+                </div>
+            </div>
         </nav>
         <!-- banner -->
         <div class=" container">
@@ -114,6 +160,222 @@
                 </div>
             </div>
         </section>
+        <!-- Programme section -->
+        <section>
+            <div class="">
+                <div
+                    class=" p-8 mx-4 lg:mx-auto mt-8 mb-12 text-center border-2 border-dashed border-y-gray-200 border-x-0">
+                    <h3 class=" font-extrabold text-3xl mb-6">Program Sections</h3>
+                    <p class="w-2/3 lg:w-3/5 mx-auto font-medium text-stone-400 text-center">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Products -->
+        <section class="container mx-auto">
+            <div class=" p-8 mx-4 lg:mx-auto mt-8 mb-12 text-center border-2 border-dashed border-y-gray-200 border-x-0">
+                <h3 class=" font-extrabold text-3xl mb-6">Our New Products</h3>
+                <p class="lg:w-3/5 mx-auto font-medium text-stone-400 text-center">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                    in sit nullam proin.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- item 1 -->
+                <div class=" flex justify-start p-3 hero border-2 border-slate-300 rounded-lg ">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="./images/5.png" class="max-w-sm rounded-lg" />
+                        <div>
+                            <div class="">
+                                <span class=""><i class="fa-solid fa-star text-yellow-400 "></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">5.0</span>
+                                <span class="ml-4"><i class="fa-solid fa-eye text-[#424247a2] font-medium"></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">20</span>
+                                <span class="ml-4"><i
+                                        class="fa-regular fa-heart text-[#424247a2] font-medium"></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">200</span>
+                            </div>
+                            <h2 class="text-xl font-extrabold my-3">World Class Sport Jacket</h2>
+                            <p class="mb-4">
+                                High Quality | Premium | Branded <br>
+                                100% Export Quality
+                            </p>
+                            <div class="flex justify-between">
+                                <h5 class="text-xl font-extrabold text-[#FF4240]">Price - $22.00</h5>
+                                <div class="flex">
+                                    <span>
+                                        <i class="fa-solid fa-cart-shopping text-[#42424776]"></i>
+                                    </span>
+                                    <p class="ml-3">Delivery Fee : Free</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 2 -->
+                <div class="hero border-2 flex justify-start p-3 border-slate-300 rounded-lg">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="./images/6.png" class="max-w-sm rounded-lg" />
+                        <div>
+                            <div class="">
+                                <span class=""><i class="fa-solid fa-star text-yellow-400 "></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">5.0</span>
+                                <span class="ml-4"><i class="fa-solid fa-eye text-[#424247a2] font-medium"></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">20</span>
+                                <span class="ml-4"><i
+                                        class="fa-regular fa-heart text-[#424247a2] font-medium"></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">200</span>
+                            </div>
+                            <h2 class="text-xl font-extrabold my-3">World Cup Flags Football</h2>
+                            <p class="mb-4">
+                                High Quality | Premium | Branded <br>
+                                100% Export Quality
+                            </p>
+                            <div class="flex justify-between">
+                                <h5 class="text-xl font-extrabold text-[#FF4240]">Price - $22.00</h5>
+                                <div class="flex">
+                                    <span>
+                                        <i class="fa-solid fa-cart-shopping text-[#42424776]"></i>
+                                    </span>
+                                    <p class="ml-3">Delivery Fee : Free</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 3 -->
+                <div class="hero border-2 flex justify-start p-3 border-slate-300 rounded-lg">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="./images/7.png" class="max-w-sm rounded-lg" />
+                        <div>
+                            <div class="">
+                                <span class=""><i class="fa-solid fa-star text-yellow-400 "></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">5.0</span>
+                                <span class="ml-4"><i class="fa-solid fa-eye text-[#424247a2] font-medium"></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">20</span>
+                                <span class="ml-4"><i
+                                        class="fa-regular fa-heart text-[#424247a2] font-medium"></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">200</span>
+                            </div>
+                            <h2 class="text-xl font-extrabold my-3">World Cup Flags Football</h2>
+                            <p class="mb-4">
+                                High Quality | Premium | Branded <br>
+                                100% Export Quality
+                            </p>
+                            <div class="flex justify-between">
+                                <h5 class="text-xl font-extrabold text-[#FF4240]">Price - $22.00</h5>
+                                <div class="flex">
+                                    <span>
+                                        <i class="fa-solid fa-cart-shopping text-[#42424776]"></i>
+                                    </span>
+                                    <p class="ml-3">Delivery Fee : Free</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 4-->
+                <div class="hero border-2 flex justify-start p-3 border-slate-300 rounded-lg">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="./images/8.png" class="max-w-sm rounded-lg" />
+                        <div>
+                            <div class="">
+                                <span class=""><i class="fa-solid fa-star text-yellow-400 "></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">5.0</span>
+                                <span class="ml-4"><i class="fa-solid fa-eye text-[#424247a2] font-medium"></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">20</span>
+                                <span class="ml-4"><i
+                                        class="fa-regular fa-heart text-[#424247a2] font-medium"></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">200</span>
+                            </div>
+                            <h2 class="text-xl font-extrabold my-3">World Cup Flags T-shirt</h2>
+                            <p class="mb-4">
+                                High Quality | Premium | Branded <br>
+                                100% Export Quality
+                            </p>
+                            <div class="flex justify-between">
+                                <h5 class="text-xl font-extrabold text-[#FF4240]">Price - $22.00</h5>
+                                <div class="flex">
+                                    <span>
+                                        <i class="fa-solid fa-cart-shopping text-[#42424776]"></i>
+                                    </span>
+                                    <p class="ml-3">Delivery Fee : Free</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- itemm 5 -->
+                <div class="hero border-2 flex justify-start p-3 border-slate-300 rounded-lg">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="./images/9.png" class="max-w-sm rounded-lg" />
+                        <div>
+                            <div class="">
+                                <span class=""><i class="fa-solid fa-star text-yellow-400 "></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">5.0</span>
+                                <span class="ml-4"><i class="fa-solid fa-eye text-[#424247a2] font-medium"></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">20</span>
+                                <span class="ml-4"><i
+                                        class="fa-regular fa-heart text-[#424247a2] font-medium"></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">200</span>
+                            </div>
+                            <h2 class="text-xl font-extrabold my-3">Premium Green Sports Helmate</h2>
+                            <p class="mb-4">
+                                High Quality | Premium | Branded <br>
+                                100% Export Quality
+                            </p>
+                            <div class="flex justify-between">
+                                <h5 class="text-xl font-extrabold text-[#FF4240]">Price - $22.00</h5>
+                                <div class="flex">
+                                    <span>
+                                        <i class="fa-solid fa-cart-shopping text-[#42424776]"></i>
+                                    </span>
+                                    <p class="ml-3">Delivery Fee : Free</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 6 -->
+                <div class="hero border-2 flex justify-start p-3 border-slate-300 rounded-lg">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="./images/10.png" class="max-w-sm rounded-lg" />
+                        <div>
+                            <div class="">
+                                <span class=""><i class="fa-solid fa-star text-yellow-400 "></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">5.0</span>
+                                <span class="ml-4"><i class="fa-solid fa-eye text-[#424247a2] font-medium"></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">20</span>
+                                <span class="ml-4"><i
+                                        class="fa-regular fa-heart text-[#424247a2] font-medium"></i></span>
+                                <span class="ml-2 text-[#424247a2] font-medium">200</span>
+                            </div>
+                            <h2 class="text-xl font-extrabold my-3">World Cup Flags Football</h2>
+                            <p class="mb-4">
+                                High Quality | Premium | Branded <br>
+                                100% Export Quality
+                            </p>
+                            <div class="flex justify-between">
+                                <h5 class="text-xl font-extrabold text-[#FF4240]">Price - $22.00</h5>
+                                <div class="flex">
+                                    <span>
+                                        <i class="fa-solid fa-cart-shopping text-[#42424776]"></i>
+                                    </span>
+                                    <p class="ml-3">Delivery Fee : Free</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- get in Touch -->
         <section class="container mx-auto ">
@@ -130,7 +392,7 @@
                 <!-- info-div -->
                 <div class="grid-cols-1 border-2 border-slate-300 rounded-lg">
                     <div class="py-4 px-2 lg:py-10 px-4 lg:px-10 grid grid-cols-1 gap-6">
-                        <div class="bg-orange-100 p-8 rounded-lg">
+                        <div class="bg-green-100 p-8 rounded-lg">
                             <img class="w-12" src="./images/tel.png" alt="telephone">
                             <h4 class="font-extrabold text-stone-400 mt-6 mb-1">Phone Number :</h4>
                             <h4 class="font-extrabold">(+62) 123-321-543</h4>
@@ -140,7 +402,7 @@
                             <h4 class="font-extrabold text-stone-400 mt-6 mb-1">Email</h4>
                             <h4 class="font-extrabold">hockeys@support.com</h4>
                         </div>
-                        <div class="bg-orange-100 p-8 rounded-lg">
+                        <div class="bg-blue-100 p-8 rounded-lg">
                             <img class="w-12" src="./images/map.png" alt="location">
                             <h4 class="font-extrabold text-stone-400 mt-6 mb-1">Location</h4>
                             <h4 class="font-extrabold">152/1 Mohakhali Wireless Gate</h4>
